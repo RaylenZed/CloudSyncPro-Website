@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — CloudSync Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+  <button id="btn-cn" onclick="setLang('cn')">中文</button>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">☁️ <span>CloudSync</span> Pro</a>
+    <div class="nav-links">
+      <a href="index.html" lang="en">Home</a>
+      <a href="index.html" lang="cn">首页</a>
+      <a href="privacy.html" lang="en">Privacy</a>
+      <a href="privacy.html" lang="cn">隐私政策</a>
+      <a href="terms.html" lang="en">Terms</a>
+      <a href="terms.html" lang="cn">服务条款</a>
+    </div>
+  </div>
+</nav>
+
+<!-- English Privacy Policy -->
+<article class="legal" lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: February 6, 2025</p>
+
+  <h2>1. Introduction</h2>
+  <p>CloudSync Pro ("we", "our", "the App") is a desktop application that helps you manage files across multiple cloud storage providers. We are committed to protecting your privacy. This policy explains what data we access, how we use it, and your rights.</p>
+
+  <h2>2. Data We Access</h2>
+  <p>When you connect a cloud account, CloudSync Pro requests access to:</p>
+  <ul>
+    <li><strong>Google Drive:</strong> File metadata (names, sizes, dates) and file content for deduplication analysis. Scopes: <code>drive.readonly</code> or <code>drive</code> depending on your configuration.</li>
+    <li><strong>Google Photos:</strong> Photo and video metadata and content for deduplication. Scope: <code>photoslibrary.readonly</code>.</li>
+    <li><strong>OneDrive:</strong> File metadata and content via Microsoft Graph API.</li>
+    <li><strong>Dropbox:</strong> File metadata and content via Dropbox API.</li>
+  </ul>
+
+  <h2>3. How We Use Your Data</h2>
+  <ul>
+    <li><strong>File browsing:</strong> Display your cloud files in a unified interface.</li>
+    <li><strong>Deduplication:</strong> Compute file hashes and perceptual hashes locally to identify duplicate files.</li>
+    <li><strong>AI analysis (optional):</strong> If you enable AI-powered deduplication, file embeddings may be sent to your configured AI provider (e.g., OpenAI, Anthropic) using your own API keys.</li>
+    <li><strong>Cross-cloud transfer:</strong> Move or copy files between your connected cloud accounts at your request.</li>
+  </ul>
+
+  <h2>4. Data Storage</h2>
+  <ul>
+    <li>All data processing happens <strong>locally on your device</strong>.</li>
+    <li>OAuth tokens are stored securely in the macOS Keychain or an encrypted local file (Linux).</li>
+    <li>File metadata may be cached in a local SQLite database for performance.</li>
+    <li>We do <strong>not</strong> operate any remote servers that receive your data.</li>
+    <li>We do <strong>not</strong> collect analytics, telemetry, or usage data.</li>
+  </ul>
+
+  <h2>5. Third-Party Services</h2>
+  <p>CloudSync Pro communicates directly with:</p>
+  <ul>
+    <li>Google APIs (Drive, Photos) — governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
+    <li>Microsoft Graph API — governed by <a href="https://privacy.microsoft.com/privacystatement" target="_blank">Microsoft's Privacy Statement</a></li>
+    <li>Dropbox API — governed by <a href="https://www.dropbox.com/privacy" target="_blank">Dropbox's Privacy Policy</a></li>
+    <li>AI providers (optional, user-configured) — governed by their respective privacy policies</li>
+  </ul>
+
+  <h2>6. Data Sharing</h2>
+  <p>We do <strong>not</strong> sell, rent, or share your personal data with any third party. Your files and metadata are only accessed as described above and never leave your device except when communicating with the cloud providers you explicitly authorized.</p>
+
+  <h2>7. Data Retention</h2>
+  <p>Local caches can be cleared at any time from within the App. When you disconnect a cloud account, all associated tokens and cached data are deleted from your device.</p>
+
+  <h2>8. Your Rights</h2>
+  <ul>
+    <li>You can revoke CloudSync Pro's access to any cloud account at any time through that provider's account settings.</li>
+    <li>You can delete all locally stored data by uninstalling the App.</li>
+    <li>You can request information about what data the App has stored locally.</li>
+  </ul>
+
+  <h2>9. Children's Privacy</h2>
+  <p>CloudSync Pro is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+  <h2>11. Contact</h2>
+  <p>If you have questions about this Privacy Policy, please open an issue on our <a href="https://github.com/nicro296/CloudSyncPro" target="_blank">GitHub repository</a>.</p>
+</article>
+
+<!-- Chinese Privacy Policy -->
+<article class="legal" lang="cn">
+  <h1>隐私政策</h1>
+  <p class="updated">最后更新：2025 年 2 月 6 日</p>
+
+  <h2>1. 简介</h2>
+  <p>CloudSync Pro（"我们"、"本应用"）是一款帮助您管理多个云存储服务文件的桌面应用。我们致力于保护您的隐私。本政策说明了我们访问哪些数据、如何使用以及您的权利。</p>
+
+  <h2>2. 我们访问的数据</h2>
+  <p>当您连接云账户时，CloudSync Pro 会请求访问：</p>
+  <ul>
+    <li><strong>Google Drive：</strong>文件元数据（名称、大小、日期）和文件内容，用于去重分析。</li>
+    <li><strong>Google Photos：</strong>照片和视频的元数据和内容，用于去重。</li>
+    <li><strong>OneDrive：</strong>通过 Microsoft Graph API 访问文件元数据和内容。</li>
+    <li><strong>Dropbox：</strong>通过 Dropbox API 访问文件元数据和内容。</li>
+  </ul>
+
+  <h2>3. 我们如何使用您的数据</h2>
+  <ul>
+    <li><strong>文件浏览：</strong>在统一界面中展示您的云文件。</li>
+    <li><strong>去重：</strong>在本地计算文件哈希和感知哈希以识别重复文件。</li>
+    <li><strong>AI 分析（可选）：</strong>如果您启用 AI 去重功能，文件嵌入可能会使用您自己的 API 密钥发送到您配置的 AI 提供商。</li>
+    <li><strong>跨云传输：</strong>根据您的指令在已连接的云账户之间移动或复制文件。</li>
+  </ul>
+
+  <h2>4. 数据存储</h2>
+  <ul>
+    <li>所有数据处理均在<strong>您的本地设备</strong>上进行。</li>
+    <li>OAuth 令牌安全存储在 macOS 钥匙串或加密本地文件中（Linux）。</li>
+    <li>文件元数据可能缓存在本地 SQLite 数据库中以提升性能。</li>
+    <li>我们<strong>不</strong>运营任何接收您数据的远程服务器。</li>
+    <li>我们<strong>不</strong>收集分析数据、遥测数据或使用数据。</li>
+  </ul>
+
+  <h2>5. 第三方服务</h2>
+  <p>CloudSync Pro 直接与以下服务通信：</p>
+  <ul>
+    <li>Google API（Drive、Photos）</li>
+    <li>Microsoft Graph API</li>
+    <li>Dropbox API</li>
+    <li>AI 提供商（可选，用户配置）</li>
+  </ul>
+
+  <h2>6. 数据共享</h2>
+  <p>我们<strong>不会</strong>出售、出租或与任何第三方共享您的个人数据。您的文件和元数据仅按上述方式访问，除与您明确授权的云服务商通信外，不会离开您的设备。</p>
+
+  <h2>7. 数据保留</h2>
+  <p>本地缓存可随时在应用内清除。当您断开云账户连接时，所有相关令牌和缓存数据将从您的设备中删除。</p>
+
+  <h2>8. 您的权利</h2>
+  <ul>
+    <li>您可以随时通过云服务商的账户设置撤销 CloudSync Pro 的访问权限。</li>
+    <li>您可以通过卸载应用删除所有本地存储的数据。</li>
+    <li>您可以了解应用在本地存储了哪些数据。</li>
+  </ul>
+
+  <h2>9. 儿童隐私</h2>
+  <p>CloudSync Pro 不面向 13 岁以下的儿童。我们不会有意收集儿童的数据。</p>
+
+  <h2>10. 政策变更</h2>
+  <p>我们可能会不时更新本隐私政策。变更将在本页面发布并更新修订日期。</p>
+
+  <h2>11. 联系方式</h2>
+  <p>如果您对本隐私政策有疑问，请在我们的 <a href="https://github.com/nicro296/CloudSyncPro" target="_blank">GitHub 仓库</a>上提交 issue。</p>
+</article>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="privacy.html" lang="en">Privacy Policy</a>
+    <a href="privacy.html" lang="cn">隐私政策</a>
+    <a href="terms.html" lang="en">Terms of Service</a>
+    <a href="terms.html" lang="cn">服务条款</a>
+    <a href="https://github.com/nicro296/CloudSyncPro" target="_blank">GitHub</a>
+  </div>
+  <p>&copy; 2025 CloudSync Pro. All rights reserved.</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.body.classList.toggle('zh', lang === 'cn');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-cn').classList.toggle('active', lang === 'cn');
+  localStorage.setItem('lang', lang);
+}
+(function() {
+  var saved = localStorage.getItem('lang');
+  if (saved === 'cn') setLang('cn');
+})();
+</script>
+
+</body>
+</html>
